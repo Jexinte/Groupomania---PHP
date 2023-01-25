@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --lobster: "Lobster";
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--lobster);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  position: relative;
+  bottom: 20px;
+
+}
+
+body {
+  background-color: white;
+  color: black;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url(../img/logos/logo_main.png);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 4em .6em; 
+  transition: ease-in-out background 300ms;
+}
+
+.dark-mode {
+  background: #363433;
+  color: white;
+  transition: ease-in-out background 300ms;
+  background-image: url(../img/logos/dark-mode-logo.png); 
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 4em .6em; 
+}
+
+.submit-mode_dark{
+  border: 1px solid rgba(249, 249, 249, 0.78);
+  color: white;
+}
+
+input[type="submit"] {
+  padding: 1em;
+  background: none;
+}
+
+header {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+nav {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-right: 2em;
+  justify-content: flex-end;
+}
+
+h1 {
+  border-bottom: 1px solid crimson;
+  border-bottom-width: 1px;
+  border-width: .2em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 3em;
+  transition: all ease-in 700ms;
+}
+
+.inscription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1.2em;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: .4em;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  gap:1.5em;
+}
+
+.fa-moon {
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 0;*/
+  cursor: pointer;
+}
